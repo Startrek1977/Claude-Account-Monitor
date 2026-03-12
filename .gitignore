@@ -3,3 +3,6 @@
 
 # Ada Library Information
 *.ali
+
+/Claude-Account-Monitor/bin
+/Claude-Account-Monitor/obj
