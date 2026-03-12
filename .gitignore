@@ -4,5 +4,5 @@
 # Ada Library Information
 *.ali
 
-/Claude-Account-Monitor/bin
-/Claude-Account-Monitor/obj
+/src/Claude-Account-Monitor/bin
+/src/Claude-Account-Monitor/obj
