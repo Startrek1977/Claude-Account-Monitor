@@ -1,0 +1,18 @@
+name: Validate new branch name length
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  check-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch length
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          if [ ${#BRANCH} -gt 50 ]; then
+            echo "Branch name exceeds 50 characters"
+            exit 1
+          fi
