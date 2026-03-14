@@ -57,10 +57,10 @@ jobs:
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      Solution_Name: your-solution-name                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: your-wap-project-directory-name    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: your-wap-project-path                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Solution_Name: src/Claude-Account-Monitor.sln
+      Test_Project_Path: # No test project found in the repository.
+      Wap_Project_Directory: src/Claude-Account-Monitor
+      Wap_Project_Path: src/Claude-Account-Monitor/Claude-Account-Monitor.csproj
 
     steps:
     - name: Checkout
