@@ -42,5 +42,6 @@ Features and architecture may evolve as the project grows.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Claude-Account-Monitor.git
+git clone https://github.com/Startrek1977/Claude-Account-Monitor.git
 cd Claude-Account-Monitor
+```
