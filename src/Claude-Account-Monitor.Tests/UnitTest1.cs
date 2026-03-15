@@ -1,11 +1,12 @@
 using Xunit;
+using Xunit.StaFact;
 using Claude_Account_Monitor;
 
 namespace Claude_Account_Monitor.Tests
 {
     public class MainWindowTests
     {
-        [Fact]
+        [StaFact]
         public void MainWindow_CanBeInstantiated()
         {
             // Arrange & Act
@@ -15,7 +16,7 @@ namespace Claude_Account_Monitor.Tests
             Assert.NotNull(window);
         }
 
-        [Fact]
+        [StaFact]
         public void MainWindow_HasCorrectTitle()
         {
             // Arrange & Act
@@ -25,7 +26,7 @@ namespace Claude_Account_Monitor.Tests
             Assert.NotNull(window.Title);
         }
 
-        [Fact]
+        [StaFact]
         public void MainWindow_HasContent()
         {
             // Arrange & Act
@@ -35,7 +36,7 @@ namespace Claude_Account_Monitor.Tests
             Assert.NotNull(window.Content);
         }
 
-        [Fact]
+        [StaFact]
         public void MainWindow_HasValidDimensions()
         {
             // Arrange & Act
