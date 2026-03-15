@@ -6,3 +6,6 @@
 
 /src/Claude-Account-Monitor/bin
 /src/Claude-Account-Monitor/obj
+/src/.vs
+/src/Claude-Account-Monitor.Tests/bin
+/src/Claude-Account-Monitor.Tests/obj
