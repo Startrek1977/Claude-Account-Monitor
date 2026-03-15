@@ -58,7 +58,7 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       Solution_Name: src/Claude-Account-Monitor.sln
-      Test_Project_Path: src/Claude-Account-Monitor.Tests
+      Test_Project_Path: src/Claude-Account-Monitor.Tests/Claude-Account-Monitor.Tests.csproj
       Wap_Project_Directory: src/Claude-Account-Monitor
       Wap_Project_Path: src/Claude-Account-Monitor/Claude-Account-Monitor.csproj
 
@@ -80,7 +80,7 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test
+      run: dotnet test #$env:Solution_Name
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
