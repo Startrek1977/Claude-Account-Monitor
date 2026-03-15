@@ -45,3 +45,50 @@ Clone the repository:
 git clone https://github.com/Startrek1977/Claude-Account-Monitor.git
 cd Claude-Account-Monitor
 ```
+
+## Building
+
+To build the project:
+
+```bash
+dotnet build src/Claude-Account-Monitor.sln
+```
+
+## Testing
+
+The project includes a comprehensive test suite using xUnit to ensure code quality and maintain stability.
+
+### Running Tests
+
+To run all tests:
+
+```bash
+dotnet test src/Claude-Account-Monitor.sln
+```
+
+To run tests with detailed output:
+
+```bash
+dotnet test src/Claude-Account-Monitor.sln --logger "console;verbosity=detailed"
+```
+
+To run tests with code coverage (requires additional tooling):
+
+```bash
+dotnet test src/Claude-Account-Monitor.sln /p:CollectCoverage=true
+```
+
+### Test Project
+
+- **Location:** `src/Claude-Account-Monitor.Tests/`
+- **Framework:** xUnit 2.6.x
+- **Target Framework:** .NET 8.0 for Windows
+
+### Test Coverage
+
+The test project includes unit tests for:
+- Application initialization and lifecycle
+- Main window instantiation and functionality
+- Core dashboard components
+
+Tests are automatically executed in the CI/CD pipeline on every push and pull request to the main branch.
