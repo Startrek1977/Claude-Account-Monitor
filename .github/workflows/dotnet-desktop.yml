@@ -57,10 +57,10 @@ jobs:
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      Solution_Name: Claude-Account-Monitor.sln
-      Test_Project_Path: Claude-Account-Monitor.Tests
-      Wap_Project_Directory: Claude-Account-Monitor
-      Wap_Project_Path: Claude-Account-Monitor/Claude-Account-Monitor.csproj
+      Solution_Name: src/Claude-Account-Monitor.sln
+      Test_Project_Path: src/Claude-Account-Monitor.Tests
+      Wap_Project_Directory: src/Claude-Account-Monitor
+      Wap_Project_Path: src/Claude-Account-Monitor/Claude-Account-Monitor.csproj
 
     steps:
     - name: Checkout
