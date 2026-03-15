@@ -5,34 +5,24 @@ namespace Claude_Account_Monitor.Tests
 {
     public class AppTests
     {
+        private static readonly App AppInstance = new App();
+
         [Fact]
         public void App_CanBeInstantiated()
         {
-            // Arrange & Act
-            var app = new App();
-
-            // Assert
-            Assert.NotNull(app);
+            Assert.NotNull(AppInstance);
         }
 
         [Fact]
         public void App_HasCorrectResourceDictionary()
         {
-            // Arrange & Act
-            var app = new App();
-
-            // Assert
-            Assert.NotNull(app.Resources);
+            Assert.NotNull(AppInstance.Resources);
         }
 
         [Fact]
         public void App_StartsWithoutThrowingException()
         {
-            // Arrange
-            var app = new App();
-
-            // Act & Assert - If we got here without exception, test passes
-            Assert.NotNull(app);
+            Assert.NotNull(AppInstance);
         }
     }
 }
