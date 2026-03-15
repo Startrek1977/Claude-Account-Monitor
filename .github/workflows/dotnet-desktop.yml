@@ -38,6 +38,9 @@
 
 name: .NET Core Desktop
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     branches: [ "main" ]
@@ -56,7 +59,6 @@ jobs:
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       Solution_Name: src/Claude-Account-Monitor.sln
       Test_Project_Path: src/Claude-Account-Monitor.Tests/Claude-Account-Monitor.Tests.csproj
       Wap_Project_Directory: src/Claude-Account-Monitor
