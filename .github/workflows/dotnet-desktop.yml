@@ -116,5 +116,5 @@ jobs:
       uses: actions/upload-artifact@v7
       with:
         name: ClaudeMonitor-Package
-        path: ${{ env.Wap_Project_Directory }}\AppPackages #"**/AppPackages/" # Wildcard finds it regardless of depth
+        path: ${{ env.Wap_Project_Directory }}/AppPackages #"**/AppPackages/" # Wildcard finds it regardless of depth
         if-no-files-found: error
