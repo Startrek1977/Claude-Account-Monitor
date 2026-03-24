@@ -1,7 +1,7 @@
 using Xunit;
-using Claude_Account_Monitor;
+using ClaudeAccountMonitor;
 
-namespace Claude_Account_Monitor.Tests
+namespace ClaudeAccountMonitor.Tests
 {
     public class AppTests
     {

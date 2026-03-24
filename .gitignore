@@ -4,5 +4,7 @@
 # Ada Library Information
 *.ali
 
-/src/Claude-Account-Monitor/bin
-/src/Claude-Account-Monitor/obj
+# Build artifacts
+**/bin/
+**/obj/
+
