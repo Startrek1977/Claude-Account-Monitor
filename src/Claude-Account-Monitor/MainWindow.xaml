@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Claude_Account_Monitor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Claude Account Monitor" Height="450" Width="800">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <TextBlock Grid.Row="0"
+                   Text="Status:"
+                   FontWeight="Bold"
+                   Margin="0,0,0,4"/>
+
+        <TextBlock Grid.Row="1"
+                   Text="{Binding StatusText}"
+                   Margin="0,0,0,16"/>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Top">
+            <Button Content="Start"
+                    Command="{Binding StartCommand}"
+                    Width="80"
+                    Margin="0,0,8,0"/>
+            <Button Content="Stop"
+                    Command="{Binding StopCommand}"
+                    Width="80"/>
+        </StackPanel>
     </Grid>
 </Window>
