@@ -31,11 +31,14 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
+      - name: Install MAUI workload
+        run: dotnet workload install maui --ignore-failed-sources
+
       - name: Restore
         run: dotnet restore src/Claude-Account-Monitor.sln
 
       - name: Test
-        run: dotnet test src/Claude-Account-Monitor.sln -c ${{ matrix.configuration }}
+        run: dotnet test src/Claude-Account-Monitor.Tests/Claude-Account-Monitor.Tests.csproj -c ${{ matrix.configuration }}
 
       - name: Publish (Windows)
         run: dotnet publish src/Claude-Account-Monitor/Claude-Account-Monitor.csproj -c ${{ matrix.configuration }} -o ${{ github.workspace }}\publish\${{ matrix.configuration }}
