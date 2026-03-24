@@ -4,7 +4,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Threading;
 
-namespace Claude_Account_Monitor.ViewModels;
+namespace ClaudeAccountMonitor.ViewModels;
 
 public sealed partial class MainViewModel : ObservableObject
 {
