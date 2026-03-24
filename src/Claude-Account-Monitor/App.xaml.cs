@@ -1,10 +1,10 @@
-﻿using Claude_Account_Monitor.ViewModels;
+﻿using ClaudeAccountMonitor.ViewModels;
 using ClaudeAccountMonitor.Core.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Windows;
 
-namespace Claude_Account_Monitor;
+namespace ClaudeAccountMonitor;
 
 public partial class App : Application
 {

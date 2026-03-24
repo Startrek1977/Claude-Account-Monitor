@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Claude_Account_Monitor;
+namespace ClaudeAccountMonitor;
 
 public partial class MainWindow : Window
 {
