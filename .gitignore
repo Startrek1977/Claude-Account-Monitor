@@ -1,8 +1,6 @@
-# Object file
-*.o
+# Build artifacts
+**/bin/
+**/obj/
 
-# Ada Library Information
-*.ali
-
-/src/Claude-Account-Monitor/bin
-/src/Claude-Account-Monitor/obj
+# VSCode artifacts
+/src/.vs
