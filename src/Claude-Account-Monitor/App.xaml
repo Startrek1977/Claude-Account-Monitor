@@ -1,8 +1,7 @@
-﻿<Application x:Class="Claude_Account_Monitor.App"
+﻿<Application x:Class="ClaudeAccountMonitor.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Claude_Account_Monitor"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:ClaudeAccountMonitor">
     <Application.Resources>
          
     </Application.Resources>
