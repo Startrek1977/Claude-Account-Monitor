@@ -38,6 +38,9 @@ jobs:
           key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
           restore-keys: nuget-${{ runner.os }}-
 
+      - name: Repair .NET workload
+        run: dotnet workload repair
+
       - name: Install MAUI workload
         run: dotnet workload install maui --ignore-failed-sources
 
